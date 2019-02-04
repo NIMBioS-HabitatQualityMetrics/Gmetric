@@ -1,1 +1,22 @@
-# Gmetric
+This code calculates the G-metric as defined in the paper:
+
+Quantifying the contribution to network growth: the importance of habitats and pathways in a migratory network facing environmental change
+by Christine Sample, Joanna A. Bieri, Benjamin Allen, Yulia Dementieva, Alyssa Carson, Connor Higgins, Sadie Piatt, Shirley Qiu, Summer Stafford, Brady J. Mattsson, Darius Semmens, James E. Diffendorfer, and Wayne E. Thogmartin
+
+Code writen, developed, and tested by: Joanna Bieri, Christine Sample, and Summer Stafford.
+
+NEED TO INSTALL R LIBRARIES: XLconnect, extrafont
+
+To run the code for any of the case studies:
+
+1. Monarchs
+2. Pintails
+3. Hypothetical
+
+Navigate to the example folder.
+
+Here you will find a spreadsheet (.xlsx) that contains data for each class in the example. The formating and location of these files is important since the G code reads in the data based on location in the spreadsheet. There should be one tab for each season in the annual cycle. For each season, Node Attributes are at the top of the spreadsheet, followed by Path Survival rates and then Path Transitions.
+
+Also within each folder is the Run<speciesname>.R code. This is the code that should be sourced to get the G results. The User Defined Data in this code should match what is provided in the spreadsheets.
+
+The main mathematical calculation is found in GR.R and code for perturbing the system and ploting results is found in GRplots.R. Users should not need to interact with this code.
