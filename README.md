@@ -5,13 +5,13 @@ by Christine Sample, Joanna A. Bieri, Benjamin Allen, Yulia Dementieva, Alyssa C
 
 Code writen, developed, and tested by: Joanna Bieri, Christine Sample, and Summer Stafford.
 
-NEED TO INSTALL R LIBRARIES: XLconnect, extrafont
+NEED TO INSTALL R LIBRARIES: XLconnect
 
 To run the code for any of the case studies:
 
 1. Monarchs
 2. Pintails
-3. Hypothetical
+3. Pulliam Metapopulation
 
 Navigate to the example folder.
 
@@ -19,4 +19,4 @@ Here you will find a spreadsheet (.xlsx) that contains data for each class in th
 
 Also within each folder is the Run<speciesname>.R code. This is the code that should be sourced to get the G results. The User Defined Data in this code should match what is provided in the spreadsheets.
 
-The main mathematical calculation is found in GR.R and code for perturbing the system and ploting results is found in GRplots.R. Users should not need to interact with this code.
+The main mathematical calculation is found in GR.R and code for perturbing the system and plotting results is found in GRplots.R. Users should not need to interact with this code.
