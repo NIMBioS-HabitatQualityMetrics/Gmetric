@@ -5,8 +5,6 @@
 # GRs - the season population weighted G-metric for each node across the annual cycle
 # LAMBDAt - the network growth rate for each season
 # GAMMAt - the network growth rate for each season after applying the delta impact (removal, degradation, or enhancement)
-#
-# Uses the generalized formulation from: A generalized metric of habitat and pathway quality for spatially structured populations, Sample et al 2018
 
 library(XLConnect)
 
