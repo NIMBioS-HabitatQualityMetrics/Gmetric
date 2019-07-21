@@ -58,7 +58,7 @@ pdf(paste(NAME,"_GvsDelta_plots.pdf", sep="")) ## START PLOT - save as .pdf file
 symb <- 0
 plot(c(0),c(0),
      type="l", 
-     main=(paste("Contribution as a function of perturbation ", delta)),
+     main=(paste("Contribution as a function of perturbation")),
      ylim = c(min(PLOTGR),max(PLOTGR)), 
      xlim = c(min(delta_range),max(delta_range)), 
      xlab=expression(delta),
@@ -66,7 +66,7 @@ plot(c(0),c(0),
      cex.lab=1.75, 
      cex.axis=1.75, 
      cex.main=1.75
-     )
+)
 axis(side = 1, at = seq(-1,0.5, by=.1), tck = 1, lty = 2, col = "grey", labels = NA)
 axis(side = 2,  tck=1, lty=2, col = "grey", labels = NA)
 corners = par("usr") #Gets the four corners of plot area (x1, x2, y1, y2)
@@ -98,7 +98,7 @@ pdf(paste(NAME,"_GRPathvsDelta_plots.pdf", sep="")) ## START PLOT - save as .pdf
 symb <- 0
 plot(c(0),c(0),
      type="l", 
-     main=expression(paste("Pathway Contribution, as a function of ", delta)),
+     main=expression(paste("Pathway Contribution, as a function of perturbation")),
      ylim = c(min(PLOTGRP),max(PLOTGRP)), 
      xlim = c(min(delta_range),max(delta_range)), 
      xlab=expression(delta),
@@ -130,3 +130,4 @@ for(i in 1:end){
   }
 }
 dev.off() ## END PLOT
+
