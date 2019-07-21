@@ -12,6 +12,7 @@ To run the code for any of the case studies:
 1. Monarchs
 2. Pintails
 3. Pulliam Metapopulation
+4. The hypothetical files are included to give another example of how to set up the network within the G-metric code, but this network and these results are not included in the paper
 
 Navigate to the example folder.
 
