@@ -1,6 +1,6 @@
 This code calculates the G-metric as defined in the paper:
 
-Quantifying the contribution to network growth: the importance of habitats and pathways in a migratory network facing environmental change
+Quantifying the contribution of habitats and pathways to a spatially structured population facing environmental change. (2019)
 by Christine Sample, Joanna A. Bieri, Benjamin Allen, Yulia Dementieva, Alyssa Carson, Connor Higgins, Sadie Piatt, Shirley Qiu, Summer Stafford, Brady J. Mattsson, Darius Semmens, James E. Diffendorfer, and Wayne E. Thogmartin
 
 Code writen, developed, and tested by: Joanna Bieri, Christine Sample, and Summer Stafford.
