@@ -136,8 +136,8 @@ for (SN in 1:seasons) {
   s_update[[SN]] <- list()
   for (i in 1:NUMNET){
     type <- i
-    p_update[[SN]][[i]] <- PATH_ATTRIBUTES[[i]][[SN]][[2]]   
-    s_update[[SN]][[i]] <- PATH_ATTRIBUTES[[i]][[SN]][[1]]
+    p_update[[SN]][[i]] <- PATH_ATTRIBUTES[[i]][[SN]][[1]]   
+    s_update[[SN]][[i]] <- PATH_ATTRIBUTES[[i]][[SN]][[2]]
   }
 rm(i)
 
@@ -222,8 +222,11 @@ for (i in 1:num_nodes){
   if(NUMNET==1){
     WRt[i,] <- WR[i,]
   }
-  else{
-    WRt[i,] <- colSums(WR[((i-1)*NUMNET+1):(i*NUMNET),])
+  else{  
+    if (seasons==1) {
+      WRt[i,] <- sum(WR[((i-1)*NUMNET+1):(i*NUMNET),])}
+    else{
+      WRt[i,] <- colSums(WR[((i-1)*NUMNET+1):(i*NUMNET),])}
   }
 }
 
