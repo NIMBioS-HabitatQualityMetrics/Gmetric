@@ -262,9 +262,9 @@ for (j in 1:num_nodes){
     taustart <- SN  
     tauend <- SN+seasons-1
     for (i in taustart:tauend){
-      CRnewtemp <- CRnewtemp %*% t(matrix(AMATRIX_CR[[i]], nrow = nrow(AMATRIX)))%*%Drr
+      CRnewtemp <- CRnewtemp %*%Drr %*% t(matrix(AMATRIX_CR[[i]], nrow = nrow(AMATRIX)))
     }
-    GAMMAt[j,SN] <- WR[,SN]%*%Drr%*%CRnewtemp %*% ONES
+    GAMMAt[j,SN] <- WR[,SN]%*%CRnewtemp %*% ONES
   }
 }
 
